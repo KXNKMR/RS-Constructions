@@ -1,0 +1,459 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* common class */
+.container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+/* navbar */
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+.logo h2 {
+    color: white;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0 24px;
+    background-color: black;
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    top: 0%;
+    /* border-bottom: 3px solid #FF6D1F; */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.hhh {
+    list-style: none;
+    display: none;
+}
+
+.hhh li {
+    margin-bottom: 20px;
+}
+
+/* .l-items {
+    display: flex;
+    justify-self: start;
+    gap: 20px;
+} */
+
+/* .logo {
+    position: fixed;
+    justify-self: center;
+} */
+
+.r-items {
+    justify-self: end;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.navbar a:hover {
+    color: gold;
+}
+
+/* home section */
+#home {
+    width: 100%;
+    height: 100%;
+    background-image: url(./4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.562);
+    /* background-color: rgba(255, 255, 255, 0.321); */
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home h1 {
+    font-size: 6rem;
+    color: gold;
+    text-align: center;
+    line-height: 100px;
+    letter-spacing:8px;
+    margin-bottom: 0%;
+    text-shadow: 5px 2px 2px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Herr Von Muellerhoff", cursive;
+}
+
+.home h1 .rs {
+    font-family: "Gelasio", serif;
+    /* letter-spacing: 20px;; */
+    color: white;
+    font-size: 250px;
+    font-style: italic;
+}
+
+
+.box p {
+    margin-top: 0%;
+    font-size: 2.5rem;
+    text-align: center;
+    /* word-spacing: 10px; */
+    text-transform: capitalize
+    ;
+    color: white;
+    text-shadow: 3px 2px 2px black;
+}
+
+.box a {
+    text-decoration: none;
+    background-color: black;
+    color: gold;
+    padding: 10px;
+    font-size: 1.8rem;
+}
+
+.box a:hover {
+    background-color: gold;
+    color: black;
+}
+
+.hlinks a {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 20px;
+    color: white;
+    /* background-color: white; */
+}
+
+/* about */
+#about {
+    /* background-color: #faf3e17a; */
+    margin-bottom: 0;
+}
+
+.about h2 {
+    font-size: 4rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.bio {
+    display: flex;
+    gap: 30px;
+}
+
+.bio img {
+    /* margin-top: 10px; */
+    width: 200px;
+    height: 200px;
+}
+
+.abt-left p{
+    width: 100%;
+} 
+
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle p {
+    
+    font-family: "Gelasio", serif;
+    font-weight: bolder;
+    padding: 20px;
+    width: 70%;
+    text-align: justify;
+    border-radius: 0%; 
+    color: gold;
+    background-color: black;
+    border-block-end: groove;
+    border-color: gold;
+    border-width: 20px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dcard {
+    text-align: center;
+}
+
+.dcard h2 {
+    margin-bottom: 0;
+}
+
+.dcard p {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* service */
+.title h2 {
+    margin: auto;
+    margin-top: 40px;
+    font-size: 4rem;
+    padding: 30px;
+}
+
+#services h3 {
+    font-size: 2rem;
+}
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.s-card {
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 8px 6px 5px rgba(0, 0, 0, 0.388);
+    box-shadow: 3px 3px 2px gold;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.s-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content .txt2 {
+    font-weight: bold;
+}
+
+.card-content h4 {
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.card-content p {
+    margin-top: 3%;
+    text-align: left;
+    /* text-transform: uppercase; */
+    word-break: break-all;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+.link-s {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.link-s a {
+    text-decoration: none;
+    color:slateblue;
+    cursor: pointer;
+}
+
+/* why choose us */
+.choose {
+    margin-top: 0%;
+    background-color: gold;
+}
+
+.industries {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.industries img{
+    width: 100%;
+    height: 300px;
+}
+
+.imgblk p {
+    width:100% ;
+    text-align: justify;
+}
+
+.whyblk {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.whypoints {
+    width: 100%;
+    background-color: rgb(222, 190, 10);
+    padding-bottom: 10px;
+}
+
+.whypoints p {
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 0%;
+}
+
+.whypoints h2 {
+    padding: 10px;
+    padding-bottom: 0%;
+    margin: 0;
+}
+
+/* brands */
+.client h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.brands img {
+    width: 100px;
+    height: 100px;
+}
+
+/* reviews */
+.review {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+.comment {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    border: 2px solid white;
+}
+
+.comment p {
+    margin-top: 10px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-align: center; */
+}
+
+/* contact */
+#contact {
+    background-color: black;
+    color: white;
+
+}
+
+.foot {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #eee;
+}
+
+.foot .footer-content {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.foot .footer-content h1 {
+    color: white;
+    letter-spacing: 3px;
+}
+
+.foot .footer-content p {
+    color:#555;
+}
+
+.foot .footer-content .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.foot .footer-content .links a{
+    color: gold;
+    text-decoration: none;
+    cursor: pointer;
+    /* border: 2px solid slateblue; */
+    /* width: 25px; */
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+}
+
+.foot .footer-content .links p {
+    margin-left: 10%;
+    text-align: left;
+    transition: all 0.5s ease-in;
+}
+
+.foot .footer-content .links a:hover {
+    /* background-color: slateblue; */
+    color:#fff;
+}
+
+.foot .footer-content .links p:hover {
+    /* background-color: slateblue; */
+    color:#fff;
+}
