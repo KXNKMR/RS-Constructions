@@ -1,6 +1,9 @@
 @media screen and (max-width:450px) {
     .navbar {
         z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     .menu-btn {
         display: block;
@@ -35,11 +38,15 @@
         margin-left: 0px;
     }
 
-    .logo {
-    position: fixed;
-    justify-self: left;
-    right: 20px;
-    }
+   
+
+    .logo img {
+        height: 50px;
+        width: 50px;
+        margin-top: auto;
+    } 
+
+
 
     /* home */
     .box h1{
@@ -154,6 +161,10 @@
 
 @media (min-width:451px) and (max-width:990px) {
 
+    .navbar {
+        z-index: 9999;
+    }
+
     .video {
         display: flex;
         /* width: 100%; */
@@ -178,8 +189,9 @@
         line-height: 80px;
     }
 
-    .home h1 .rs {
-        font-size: 150px;
+    .home h1  {
+        /* font-size: 150px; */
+        word-spacing: 20px;
     }
 
     .box p {
