@@ -3,177 +3,127 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Explore all interior design services offered by Ace of Space, including modular interiors, furniture, ceilings, lighting, flooring, fabrication and more."
-    >
+    <title>Our Services | RS Enterprises</title>
 
-    <title>Our Services | Ace of Space</title>
+    <meta name="description" content="Explore RS Enterprises services including waterproofing, concrete flooring, epoxy flooring, road works, interior design and construction solutions in Bengaluru.">
+
+    <meta name="theme-color" content="#111110">
+
+    <link rel="icon" type="image/png" href="../assets/images/rs-enterprises-monogram.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../style.css">
+
+    <!-- Service image styling -->
+    <style>
+        .service-card-image {
+            width: 100%;
+            aspect-ratio: 3 / 2;
+            overflow: hidden;
+            margin-bottom: 24px;
+            background: #e9e7e2;
+            position: relative;
+        }
+
+        .service-card-image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .service-category-card:hover .service-card-image img {
+            transform: scale(1.04);
+        }
+    </style>
 </head>
 
-<body class="site-body">
+<body id="top" class="site-body">
 
-    <!-- =====================================
-         HEADER & NAVIGATION
-    ====================================== -->
-
+    <!-- HEADER -->
     <header class="site-header">
 
-        <div class="logo site-logo">
-            <a href="../index.html">
-                <span>ACE OF SPACE</span>
-                <span>INTERIOR DESIGN &amp; CONSTRUCTION</span>
-            </a>
-        </div>
+        <a href="../index.html" class="site-logo" aria-label="RS Enterprises homepage">
+            <img
+                src="../assets/images/rs-enterprises-monogram.png"
+                alt="RS Enterprises monogram"
+                class="site-logo-image"
+            >
+        </a>
 
-        <nav aria-label="Main Navigation" class="site-nav">
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
+        <nav class="site-nav" id="main-navigation" aria-label="Main navigation">
             <ul class="nav-list">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html" aria-current="page">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li>
+                    <a href="services.html" class="nav-link" aria-current="page">
                         Services
                     </a>
-
-                    <ul class="nav-submenu">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/modular-interiors.html">
-                                Modular Interiors
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/furniture.html">
-                                Furniture
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/ceiling-lighting.html">
-                                Ceiling &amp; Lighting
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/doors-windows-partitions.html">
-                                Doors, Windows &amp; Partitions
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/fabrication-metal-works.html">
-                                Fabrication &amp; Metal Works
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/wall-interiors-decoration.html">
-                                Wall Interiors &amp; Decoration
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/materials-carpentry.html">
-                                Materials &amp; Carpentry
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/other-interior-spaces.html">
-                                Other Interior Spaces
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/flooring.html">
-                                Flooring
-                            </a>
-                        </li>
-
-                    </ul>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="construction.html">Construction</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="testimonials.html">Testimonials</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-
         </nav>
 
-        <div class="header-cta">
-            <a class="button button--primary" href="contact.html">
-                Get a Quote
-            </a>
-        </div>
+        <a href="contact.html" class="button button--primary header-cta">
+            Request a Quote <span aria-hidden="true">↗</span>
+        </a>
 
     </header>
 
 
-    <main class="site-main">
+    <main class="site-main services-page">
 
-        <!-- =====================================
-             01. SERVICES PAGE HERO
-        ====================================== -->
-
+        <!-- 01. SERVICES HERO -->
         <section
-            aria-labelledby="services-page-heading"
             class="section section--services-hero services-hero"
+            aria-labelledby="services-page-heading"
         >
 
-            <p class="section-eyebrow">
-                WHAT WE DO
-            </p>
+            <p class="section-eyebrow">OUR EXPERTISE</p>
 
             <h1 class="section-title" id="services-page-heading">
-                Our Services
+                Specialised Solutions.
+                <em>Built to Perform.</em>
             </h1>
 
             <p class="section-description">
-                Thoughtfully designed interiors, carefully selected
-                materials and complete solutions for every space.
-                Explore our range of interior design and related services.
+                From advanced waterproofing and specialised flooring
+                to infrastructure development, interior execution
+                and construction, RS Enterprises delivers solutions
+                for a wide range of building and project requirements.
             </p>
 
             <div class="services-overview">
 
                 <div class="services-overview-item">
                     <span class="services-overview-number">09</span>
-                    <span class="services-overview-label">Service Categories</span>
+                    <span class="services-overview-label">Core Service Categories</span>
                 </div>
 
                 <div class="services-overview-item">
-                    <span class="services-overview-number">69</span>
-                    <span class="services-overview-label">Individual Services</span>
+                    <span class="services-overview-number">05</span>
+                    <span class="services-overview-label">Primary Specialisations</span>
                 </div>
 
             </div>
@@ -181,509 +131,489 @@
         </section>
 
 
-        <!-- =====================================
-             02. SERVICES DIRECTORY
-        ====================================== -->
-
+        <!-- 02. SERVICES DIRECTORY -->
         <section
-            aria-labelledby="services-directory-heading"
             class="section section--services-directory services-directory"
             id="all-services"
+            aria-labelledby="services-directory-heading"
         >
 
-            <div class="section-intro">
+            <div class="container">
 
-                <p class="section-eyebrow">
-                    EXPLORE OUR EXPERTISE
-                </p>
+                <div class="section-intro">
 
-                <h2 class="section-title" id="services-directory-heading">
-                    Complete Solutions for Every Space.
-                </h2>
+                    <p class="section-eyebrow">EXPLORE OUR EXPERTISE</p>
 
-                <p class="section-description">
-                    Browse our nine service categories to discover
-                    the solutions we offer for residential and
-                    commercial spaces.
-                </p>
-
-            </div>
-
-
-            <div class="services-directory-grid card-grid service-grid">
-
-
-                <!-- =====================================
-                     CATEGORY 01. MODULAR INTERIORS
-                ====================================== -->
-
-                <article
-                    class="service-card service-category-card"
-                    id="modular-interiors"
-                >
-                    <div class="service-card-image"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=88" alt="Interior design visual reference" loading="lazy"></div>
-
-                    <div class="service-card-header">
-                        <span class="service-card-number">01</span>
-                        <span class="service-card-count">10 SERVICES</span>
-                    </div>
-
-                    <h2 class="service-card-title">
-                        Modular Interiors
+                    <h2 class="section-title" id="services-directory-heading">
+                        Our Services.
+                        <em>One Company.</em>
                     </h2>
 
-                    <p class="service-card-description">
-                        Functional, beautifully planned modular
-                        solutions designed to make the most of
-                        your available space.
+                    <p class="section-description">
+                        Explore our specialised services and construction
+                        capabilities. Each category covers a range of
+                        solutions that can be tailored to individual
+                        residential, commercial and industrial requirements.
                     </p>
 
-                    <ul class="service-list">
-
-                        <li>Modular Kitchens</li>
-                        <li>Wardrobes</li>
-                        <li>TV Units</li>
-                        <li>Crockery Units</li>
-                        <li>Bedroom Interiors</li>
-                        <li>Living Room Interiors</li>
-                        <li>Study Tables &amp; Units</li>
-                        <li>Shoe Racks</li>
-                        <li>Bar Units</li>
-                        <li>Storage Units</li>
-
-                    </ul>
-
-                    <a
-                        class="text-link service-card-link"
-                        href="services/modular-interiors.html"
-                    >
-                        Explore Modular Interiors
-                    </a>
-
-                </article>
-
-
-                <!-- =====================================
-                     CATEGORY 02. FURNITURE
-                ====================================== -->
-
-                <article
-                    class="service-card service-category-card"
-                    id="furniture"
-                >
-                    <div class="service-card-image"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=88" alt="Interior design visual reference" loading="lazy"></div>
-
-                    <div class="service-card-header">
-                        <span class="service-card-number">02</span>
-                        <span class="service-card-count">08 SERVICES</span>
-                    </div>
-
-                    <h2 class="service-card-title">
-                        Furniture
-                    </h2>
-
-                    <p class="service-card-description">
-                        Custom-made furniture and carefully
-                        considered pieces that bring comfort,
-                        character and functionality to every space.
-                    </p>
-
-                    <ul class="service-list">
-
-                        <li>Custom-Made Furniture</li>
-                        <li>Sofa Sets</li>
-                        <li>Beds</li>
-                        <li>Dining Tables</li>
-                        <li>Coffee Tables</li>
-                        <li>Office Furniture</li>
-                        <li>Dressing Tables</li>
-                        <li>Side Tables</li>
-
-                    </ul>
-
-                    <a
-                        class="text-link service-card-link"
-                        href="services/furniture.html"
-                    >
-                        Explore Furniture
-                    </a>
-
-                </article>
-
-
-                <!-- =====================================
-                     CATEGORY 03. CEILING & LIGHTING
-                ====================================== -->
-
-                <article
-                    class="service-card service-category-card"
-                    id="ceiling-lighting"
-                >
-                    <div class="service-card-image"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=88" alt="Interior design visual reference" loading="lazy"></div>
-
-                    <div class="service-card-header">
-                        <span class="service-card-number">03</span>
-                        <span class="service-card-count">08 SERVICES</span>
-                    </div>
-
-                    <h2 class="service-card-title">
-                        Ceiling &amp; Lighting
-                    </h2>
-
-                    <p class="service-card-description">
-                        Thoughtful ceiling designs and lighting
-                        solutions that add depth, atmosphere
-                        and character to interiors.
-                    </p>
-
-                    <ul class="service-list">
-
-                        <li>False Ceilings</li>
-                        <li>POP Ceilings</li>
-                        <li>Gypsum Ceilings</li>
-                        <li>Wooden Ceilings</li>
-                        <li>Ceiling Designs</li>
-                        <li>Chandeliers</li>
-                        <li>Decorative Lighting</li>
-                        <li>LED Profile Lighting</li>
-
-                    </ul>
-
-                    <a
-                        class="text-link service-card-link"
-                        href="services/ceiling-lighting.html"
-                    >
-                        Explore Ceiling &amp; Lighting
-                    </a>
-
-                </article>
-
-
-                <!-- =====================================
-                     CATEGORY 04. DOORS, WINDOWS & PARTITIONS
-                ====================================== -->
-
-                <article
-                    class="service-card service-category-card"
-                    id="doors-windows-partitions"
-                >
-                    <div class="service-card-image"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1600&q=88" alt="Interior design visual reference" loading="lazy"></div>
-
-                    <div class="service-card-header">
-                        <span class="service-card-number">04</span>
-                        <span class="service-card-count">07 SERVICES</span>
-                    </div>
-
-                    <h2 class="service-card-title">
-                        Doors, Windows &amp; Partitions
-                    </h2>
-
-                    <p class="service-card-description">
-                        Practical and stylish door, window
-                        and partition solutions for modern
-                        residential and commercial spaces.
-                    </p>
-
-                    <ul class="service-list">
-
-                        <li>Aluminium Doors &amp; Windows</li>
-                        <li>UPVC Doors &amp; Windows</li>
-                        <li>Sliding Doors</li>
-                        <li>Glass Doors</li>
-                        <li>Glass Partitions</li>
-                        <li>Wooden Doors</li>
-                        <li>Room Dividers</li>
-
-                    </ul>
-
-                    <a
-                        class="text-link service-card-link"
-                        href="services/doors-windows-partitions.html"
-                    >
-                        Explore Doors &amp; Partitions
-                    </a>
-
-                </article>
-
-
-                <!-- =====================================
-                     CATEGORY 05. FABRICATION & METAL WORKS
-                ====================================== -->
-
-                <article
-                    class="service-card service-category-card"
-                    id="fabrication-metal-works"
-                >
-                    <div class="service-card-image"><img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1600&q=88" alt="Interior design visual reference" loading="lazy"></div>
-
-                    <div class="service-card-header">
-                        <span class="service-card-number">05</span>
-                        <span class="service-card-count">06 SERVICES</span>
-                    </div>
-
-                    <h2 class="service-card-title">
-                        Fabrication &amp; Metal Works
-                    </h2>
-
-                    <p class="service-card-description">
-                        Custom metalwork and fabrication solutions
-                        combining structural requirements
-                        with considered design.
-                    </p>
-
-                    <ul class="service-list">
-
-                        <li>MS Fabrication</li>
-                        <li>Stainless Steel Fabrication</li>
-                        <li>Metal Railings</li>
-                        <li>Staircase Railings</li>
-                        <li>Metal Frames</li>
-                        <li>Custom Metal Works</li>
-
-                    </ul>
-
-                    <a
-                        class="text-link service-card-link"
-                        href="services/fabrication-metal-works.html"
-                    >
-                        Explore Fabrication
-                    </a>
-
-                </article>
-
-
-                <!-- =====================================
-                     CATEGORY 06. WALL INTERIORS & DECORATION
-                ====================================== -->
-
-                <article
-                    class="service-card service-category-card"
-                    id="wall-interiors-decoration"
-                >
-                    <div class="service-card-image"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=88" alt="Interior design visual reference" loading="lazy"></div>
-
-                    <div class="service-card-header">
-                        <span class="service-card-number">06</span>
-                        <span class="service-card-count">08 SERVICES</span>
-                    </div>
-
-                    <h2 class="service-card-title">
-                        Wall Interiors &amp; Decoration
-                    </h2>
-
-                    <p class="service-card-description">
-                        Transform ordinary walls with textures,
-                        panels, cladding and decorative finishes
-                        that complement your interiors.
-                    </p>
-
-                    <ul class="service-list">
-
-                        <li>Wall Panelling</li>
-                        <li>Wooden Wall Panelling</li>
-                        <li>PVC Wall Panelling</li>
-                        <li>Wallpaper Installation</li>
-                        <li>Decorative Wall Designs</li>
-                        <li>Wall Cladding</li>
-                        <li>Texture Painting</li>
-                        <li>Mirrors &amp; Decorative Panels</li>
-
-                    </ul>
-
-                    <a
-                        class="text-link service-card-link"
-                        href="services/wall-interiors-decoration.html"
-                    >
-                        Explore Wall Interiors
-                    </a>
-
-                </article>
-
-
-                <!-- =====================================
-                     CATEGORY 07. MATERIALS & CARPENTRY
-                ====================================== -->
-
-                <article
-                    class="service-card service-category-card"
-                    id="materials-carpentry"
-                >
-                    <div class="service-card-image"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1600&q=88" alt="Interior design visual reference" loading="lazy"></div>
-
-                    <div class="service-card-header">
-                        <span class="service-card-number">07</span>
-                        <span class="service-card-count">08 SERVICES</span>
-                    </div>
-
-                    <h2 class="service-card-title">
-                        Materials &amp; Carpentry
-                    </h2>
-
-                    <p class="service-card-description">
-                        Essential interior materials, quality
-                        fittings and custom carpentry solutions
-                        for well-crafted spaces.
-                    </p>
-
-                    <ul class="service-list">
-
-                        <li>Plywood</li>
-                        <li>Laminates</li>
-                        <li>MDF Boards</li>
-                        <li>HDHMR Boards</li>
-                        <li>Veneers</li>
-                        <li>Hardware &amp; Fittings</li>
-                        <li>Custom Carpentry</li>
-                        <li>Wooden Partitions</li>
-
-                    </ul>
-
-                    <a
-                        class="text-link service-card-link"
-                        href="services/materials-carpentry.html"
-                    >
-                        Explore Materials &amp; Carpentry
-                    </a>
-
-                </article>
-
-
-                <!-- =====================================
-                     CATEGORY 08. OTHER INTERIOR SPACES
-                ====================================== -->
-
-                <article
-                    class="service-card service-category-card"
-                    id="other-interior-spaces"
-                >
-                    <div class="service-card-image"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=88" alt="Interior design visual reference" loading="lazy"></div>
-
-                    <div class="service-card-header">
-                        <span class="service-card-number">08</span>
-                        <span class="service-card-count">08 SERVICES</span>
-                    </div>
-
-                    <h2 class="service-card-title">
-                        Other Interior Spaces
-                    </h2>
-
-                    <p class="service-card-description">
-                        Specialised interior solutions that make
-                        every corner of your home more useful,
-                        comfortable and personal.
-                    </p>
-
-                    <ul class="service-list">
-
-                        <li>Pooja Units</li>
-                        <li>Bathroom Vanities</li>
-                        <li>Laundry Units</li>
-                        <li>Utility Areas</li>
-                        <li>Balcony Interiors</li>
-                        <li>Home Office Interiors</li>
-                        <li>Kids' Room Interiors</li>
-                        <li>Walk-in Wardrobes</li>
-
-                    </ul>
-
-                    <a
-                        class="text-link service-card-link"
-                        href="services/other-interior-spaces.html"
-                    >
-                        Explore Other Interior Spaces
-                    </a>
-
-                </article>
-
-
-                <!-- =====================================
-                     CATEGORY 09. FLOORING
-                ====================================== -->
-
-                <article
-                    class="service-card service-category-card"
-                    id="flooring"
-                >
-                    <div class="service-card-image"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=88" alt="Interior design visual reference" loading="lazy"></div>
-
-                    <div class="service-card-header">
-                        <span class="service-card-number">09</span>
-                        <span class="service-card-count">06 SERVICES</span>
-                    </div>
-
-                    <h2 class="service-card-title">
-                        Flooring
-                    </h2>
-
-                    <p class="service-card-description">
-                        Flooring options that bring together
-                        durability, visual appeal and the
-                        character of your interior space.
-                    </p>
-
-                    <ul class="service-list">
-
-                        <li>Wooden Flooring</li>
-                        <li>Vinyl Flooring</li>
-                        <li>Laminate Flooring</li>
-                        <li>Tile Flooring</li>
-                        <li>Marble Flooring</li>
-                        <li>SPC Flooring</li>
-
-                    </ul>
-
-                    <a
-                        class="text-link service-card-link"
-                        href="services/flooring.html"
-                    >
-                        Explore Flooring
-                    </a>
-
-                </article>
+                </div>
+
+
+                <div class="services-directory-grid card-grid service-grid">
+
+
+                    <!-- 01. WATERPROOFING -->
+                    <article class="service-card service-category-card" id="waterproofing">
+
+                        <div class="service-card-image">
+                            <img
+                                src="https://res.cloudinary.com/ulsqktro/image/upload/v1795457006/waterproof_converted.avif"
+                                alt="Waterproofing solutions"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="service-card-header">
+                            <span class="service-card-number">01</span>
+                            <span class="service-card-count">SPECIALISED WORKS</span>
+                        </div>
+
+                        <h2 class="service-card-title">Waterproofing</h2>
+
+                        <p class="service-card-description">
+                            Protective waterproofing systems designed to
+                            prevent water seepage, moisture penetration
+                            and deterioration across different building
+                            surfaces and structures.
+                        </p>
+
+                        <ul class="service-list">
+                            <li>Terrace Waterproofing</li>
+                            <li>Bathroom Waterproofing</li>
+                            <li>Basement Waterproofing</li>
+                            <li>Foundation Waterproofing</li>
+                            <li>Roof Treatment</li>
+                            <li>Crack Repair</li>
+                            <li>Concrete Repair</li>
+                            <li>Expansion Joint Treatment</li>
+                            <li>Damp Proofing</li>
+                            <li>Protective Coatings</li>
+                        </ul>
+
+                        <a href="contact.html" class="text-link service-card-link">
+                            Enquire About Waterproofing <span>↗</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 02. CONCRETE FLOORING -->
+                    <article class="service-card service-category-card" id="concrete-flooring">
+
+                        <div class="service-card-image">
+                            <img
+                                src="https://res.cloudinary.com/ulsqktro/image/upload/v1795457005/concrete_flooring_converted.avif"
+                                alt="Concrete flooring"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="service-card-header">
+                            <span class="service-card-number">02</span>
+                            <span class="service-card-count">FLOORING SOLUTIONS</span>
+                        </div>
+
+                        <h2 class="service-card-title">Concrete Flooring</h2>
+
+                        <p class="service-card-description">
+                            Durable concrete flooring solutions for
+                            industrial, commercial and other high-use
+                            spaces, with a focus on surface strength,
+                            functionality and long-term performance.
+                        </p>
+
+                        <ul class="service-list">
+                            <li>Industrial Concrete Flooring</li>
+                            <li>Commercial Concrete Flooring</li>
+                            <li>Concrete Floor Laying</li>
+                            <li>Power Floated Flooring</li>
+                            <li>Concrete Floor Finishing</li>
+                            <li>Concrete Surface Polishing</li>
+                            <li>Floor Hardening</li>
+                            <li>Concrete Floor Repair</li>
+                            <li>Floor Restoration</li>
+                        </ul>
+
+                        <a href="contact.html" class="text-link service-card-link">
+                            Enquire About Concrete Flooring <span>↗</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 03. EPOXY FLOORING -->
+                    <article class="service-card service-category-card" id="epoxy-flooring">
+
+                        <div class="service-card-image">
+                            <img
+                                src="https://res.cloudinary.com/ulsqktro/image/upload/v1795457005/epoxy_converted.avif"
+                                alt="Epoxy flooring"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="service-card-header">
+                            <span class="service-card-number">03</span>
+                            <span class="service-card-count">SPECIALISED FLOORING</span>
+                        </div>
+
+                        <h2 class="service-card-title">Epoxy Flooring</h2>
+
+                        <p class="service-card-description">
+                            Modern flooring and coating systems offering
+                            seamless surfaces, durability and a range
+                            of finishes for industrial, commercial
+                            and selected residential spaces.
+                        </p>
+
+                        <ul class="service-list">
+                            <li>Industrial Epoxy Flooring</li>
+                            <li>Commercial Epoxy Flooring</li>
+                            <li>Metallic Epoxy Flooring</li>
+                            <li>3D Epoxy Flooring</li>
+                            <li>Self-Leveling Epoxy Flooring</li>
+                            <li>Anti-Skid Epoxy Flooring</li>
+                            <li>PU Flooring</li>
+                            <li>Epoxy Protective Coatings</li>
+                            <li>Floor Repair &amp; Restoration</li>
+                        </ul>
+
+                        <a href="contact.html" class="text-link service-card-link">
+                            Enquire About Epoxy Flooring <span>↗</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 04. ROAD WORKS -->
+                    <article class="service-card service-category-card" id="road-works-infrastructure">
+
+                        <div class="service-card-image">
+                            <img
+                                src="https://res.cloudinary.com/ulsqktro/image/upload/v1795457005/road_converted.avif"
+                                alt="Road works and infrastructure"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="service-card-header">
+                            <span class="service-card-number">04</span>
+                            <span class="service-card-count">INFRASTRUCTURE</span>
+                        </div>
+
+                        <h2 class="service-card-title">Road Works &amp; Infrastructure</h2>
+
+                        <p class="service-card-description">
+                            External infrastructure and road development
+                            works focused on accessibility, site
+                            functionality and the development of
+                            surrounding built environments.
+                        </p>
+
+                        <ul class="service-list">
+                            <li>Road Construction</li>
+                            <li>Internal Road Development</li>
+                            <li>Concrete Road Works</li>
+                            <li>Driveway Construction</li>
+                            <li>Parking Area Development</li>
+                            <li>Paving &amp; Interlocking Works</li>
+                            <li>Drainage Works</li>
+                            <li>Site Levelling</li>
+                            <li>External Site Development</li>
+                            <li>Compound Wall Construction</li>
+                        </ul>
+
+                        <a href="contact.html" class="text-link service-card-link">
+                            Enquire About Road Works <span>↗</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 05. INTERIOR DESIGN -->
+                    <article class="service-card service-category-card" id="interior-design-execution">
+
+                        <div class="service-card-image">
+                            <img
+                                src="https://res.cloudinary.com/ulsqktro/image/upload/v1795457006/interior_converted.avif"
+                                alt="Interior design and execution"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="service-card-header">
+                            <span class="service-card-number">05</span>
+                            <span class="service-card-count">DESIGN &amp; EXECUTION</span>
+                        </div>
+
+                        <h2 class="service-card-title">Interior Design &amp; Execution</h2>
+
+                        <p class="service-card-description">
+                            Interior design and execution solutions
+                            for residential and commercial spaces,
+                            combining functional planning, design
+                            coordination and detailed implementation.
+                        </p>
+
+                        <ul class="service-list">
+                            <li>Residential Interior Design</li>
+                            <li>Commercial Interior Design</li>
+                            <li>Office Interior Design</li>
+                            <li>Luxury Interior Design</li>
+                            <li>Apartment Interiors</li>
+                            <li>Villa Interiors</li>
+                            <li>Modular Kitchen Design</li>
+                            <li>Wardrobe Design</li>
+                            <li>Complete Interior Execution</li>
+                            <li>Turnkey Interior Solutions</li>
+                        </ul>
+
+                        <a href="contact.html" class="text-link service-card-link">
+                            Enquire About Interior Design <span>↗</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 06. CIVIL & STRUCTURAL -->
+                    <article class="service-card service-category-card" id="civil-structural-works">
+
+                        <div class="service-card-image">
+                            <img
+                                src="https://res.cloudinary.com/ulsqktro/image/upload/v1795457004/civil_converted.avif"
+                                alt="Civil and structural works"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="service-card-header">
+                            <span class="service-card-number">06</span>
+                            <span class="service-card-count">CIVIL ENGINEERING</span>
+                        </div>
+
+                        <h2 class="service-card-title">Civil &amp; Structural Works</h2>
+
+                        <p class="service-card-description">
+                            Essential civil and structural works
+                            supporting the construction, stability
+                            and development of residential,
+                            commercial and industrial structures.
+                        </p>
+
+                        <ul class="service-list">
+                            <li>Foundation Works</li>
+                            <li>Excavation &amp; Earthwork</li>
+                            <li>RCC Works</li>
+                            <li>Concrete Works</li>
+                            <li>Column &amp; Beam Construction</li>
+                            <li>Slab Construction</li>
+                            <li>Structural Framing</li>
+                            <li>Masonry Works</li>
+                            <li>Brickwork &amp; Blockwork</li>
+                            <li>Plastering Works</li>
+                        </ul>
+
+                        <a href="contact.html" class="text-link service-card-link">
+                            Enquire About Civil Works <span>↗</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 07. BUILDING CONSTRUCTION -->
+                    <article class="service-card service-category-card" id="building-construction">
+
+                        <div class="service-card-image">
+                            <img
+                                src="https://res.cloudinary.com/ulsqktro/image/upload/v1795457005/construction_converted.avif"
+                                alt="Building construction"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="service-card-header">
+                            <span class="service-card-number">07</span>
+                            <span class="service-card-count">CONSTRUCTION</span>
+                        </div>
+
+                        <h2 class="service-card-title">Building Construction</h2>
+
+                        <p class="service-card-description">
+                            Construction solutions for different
+                            building requirements, covering
+                            residential, commercial and industrial
+                            developments.
+                        </p>
+
+                        <ul class="service-list">
+                            <li>Residential Building Construction</li>
+                            <li>Independent House Construction</li>
+                            <li>Villa Construction</li>
+                            <li>Commercial Building Construction</li>
+                            <li>Office Building Construction</li>
+                            <li>Retail &amp; Showroom Construction</li>
+                            <li>Warehouse Construction</li>
+                            <li>Industrial Shed Construction</li>
+                            <li>Turnkey Construction</li>
+                        </ul>
+
+                        <a href="contact.html" class="text-link service-card-link">
+                            Enquire About Construction <span>↗</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 08. RENOVATION -->
+                    <article class="service-card service-category-card" id="renovation-remodelling">
+
+                        <div class="service-card-image">
+                            <img
+                                src="https://res.cloudinary.com/ulsqktro/image/upload/v1795457005/renovation_converted.avif"
+                                alt="Building renovation and remodelling"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="service-card-header">
+                            <span class="service-card-number">08</span>
+                            <span class="service-card-count">UPGRADES &amp; REPAIRS</span>
+                        </div>
+
+                        <h2 class="service-card-title">Renovation &amp; Remodelling</h2>
+
+                        <p class="service-card-description">
+                            Renovation and remodelling solutions
+                            to upgrade existing buildings, improve
+                            spaces and adapt structures to
+                            changing requirements.
+                        </p>
+
+                        <ul class="service-list">
+                            <li>Residential Building Renovation</li>
+                            <li>Villa Renovation</li>
+                            <li>Apartment Renovation</li>
+                            <li>Commercial Building Renovation</li>
+                            <li>Structural Renovation</li>
+                            <li>Building Extensions</li>
+                            <li>Floor Additions</li>
+                            <li>Remodelling &amp; Alteration Works</li>
+                            <li>Old Building Restoration</li>
+                            <li>Repair Works</li>
+                        </ul>
+
+                        <a href="contact.html" class="text-link service-card-link">
+                            Enquire About Renovation <span>↗</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 09. BUILDING FINISHING -->
+                    <article class="service-card service-category-card" id="building-finishing-works">
+
+                        <div class="service-card-image">
+                            <img
+                                src="https://res.cloudinary.com/ulsqktro/image/upload/v1795457005/finishing_converted.avif"
+                                alt="Building finishing works"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+
+                        <div class="service-card-header">
+                            <span class="service-card-number">09</span>
+                            <span class="service-card-count">FINISHING SOLUTIONS</span>
+                        </div>
+
+                        <h2 class="service-card-title">Building Finishing Works</h2>
+
+                        <p class="service-card-description">
+                            Detailed finishing solutions that bring
+                            together surface treatments, materials
+                            and architectural details to complete
+                            building spaces.
+                        </p>
+
+                        <ul class="service-list">
+                            <li>Flooring Works</li>
+                            <li>Tile Installation</li>
+                            <li>Marble &amp; Granite Works</li>
+                            <li>Painting Works</li>
+                            <li>Wall Finishing</li>
+                            <li>Ceiling Works</li>
+                            <li>Door &amp; Window Installation</li>
+                            <li>Staircase Finishing</li>
+                            <li>External Facade Finishing</li>
+                            <li>Final Building Finishing</li>
+                        </ul>
+
+                        <a href="contact.html" class="text-link service-card-link">
+                            Enquire About Finishing Works <span>↗</span>
+                        </a>
+
+                    </article>
+
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- =====================================
-             03. FINAL ENQUIRY CTA
-        ====================================== -->
+        <!-- 03. ENQUIRY CTA -->
+        <section class="section section--enquiry enquiry-cta">
 
-        <section
-            aria-labelledby="services-enquiry-heading"
-            class="section section--enquiry enquiry-cta"
-        >
+            <div class="container enquiry-inner">
 
-            <p class="section-eyebrow">
-                LET'S CREATE SOMETHING EXTRAORDINARY
-            </p>
+                <div class="enquiry-copy">
 
-            <h2 class="section-title" id="services-enquiry-heading">
-                Have a Project in Mind?
-            </h2>
+                    <p class="section-eyebrow">LET'S DISCUSS YOUR REQUIREMENT</p>
 
-            <p class="section-description">
-                Whether you're planning a complete interior,
-                a specific upgrade or a new space, let's
-                discuss what you have in mind.
-            </p>
+                    <h2 class="section-title">
+                        Looking for the
+                        <em>Right Solution?</em>
+                    </h2>
 
-            <div class="hero-actions">
+                    <p class="section-description">
+                        Whether you require specialised flooring,
+                        waterproofing, infrastructure works or
+                        complete construction solutions, get in
+                        touch with RS Enterprises to discuss your project.
+                    </p>
 
-                <a
-                    class="button button--primary"
-                    href="contact.html"
-                >
-                    Discuss Your Project
-                </a>
+                </div>
 
-                <a
-                    class="button button--secondary"
-                    href="../index.html"
-                >
-                    Back to Home
-                </a>
+                <div class="hero-actions">
+
+                    <a href="contact.html" class="button button--primary">
+                        Request a Quote <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a href="../index.html" class="button button--secondary">
+                        Back to Home
+                    </a>
+
+                </div>
 
             </div>
 
@@ -692,129 +622,186 @@
     </main>
 
 
-    <!-- =====================================
-         FOOTER
-    ====================================== -->
-
+    <!-- FOOTER -->
     <footer class="site-footer">
 
+        <div class="container footer-main">
 
-        <!-- FOOTER BRAND -->
+            <div class="footer-brand">
 
-        <div class="footer-brand">
+                <a href="../index.html" class="footer-logo" aria-label="RS Enterprises home">
+                    <img
+                        src="../assets/images/rs-enterprises-monogram.png"
+                        alt="RS Enterprises monogram"
+                        class="footer-logo-image"
+                        loading="lazy"
+                    >
+                </a>
 
-            <a class="footer-link footer-logo" href="../index.html">
+                <p>
+                    Specialised construction, flooring,
+                    waterproofing and infrastructure solutions.
+                </p>
 
-                <span>ACE OF SPACE</span>
+            </div>
 
-                <span>INTERIOR DESIGN &amp; CONSTRUCTION</span>
 
+            <div class="footer-navigation">
+
+                <h3 class="footer-heading">Quick Links</h3>
+
+                <ul class="footer-list">
+                    <li><a href="../index.html" class="footer-link">Home</a></li>
+                    <li><a href="about.html" class="footer-link">About Us</a></li>
+                    <li><a href="services.html" class="footer-link">Services</a></li>
+                    <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-services">
+
+                <h3 class="footer-heading">Our Services</h3>
+
+                <ul class="footer-list">
+                    <li><a href="#waterproofing" class="footer-link">Waterproofing</a></li>
+                    <li><a href="#concrete-flooring" class="footer-link">Concrete Flooring</a></li>
+                    <li><a href="#epoxy-flooring" class="footer-link">Epoxy Flooring</a></li>
+                    <li><a href="#road-works-infrastructure" class="footer-link">Road Works &amp; Infrastructure</a></li>
+                    <li><a href="#interior-design-execution" class="footer-link">Interior Design &amp; Execution</a></li>
+                    <li><a href="#civil-structural-works" class="footer-link">Civil &amp; Structural Works</a></li>
+                    <li><a href="#building-construction" class="footer-link">Building Construction</a></li>
+                    <li><a href="#renovation-remodelling" class="footer-link">Renovation &amp; Remodelling</a></li>
+                    <li><a href="#building-finishing-works" class="footer-link">Building Finishing Works</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3 class="footer-heading">Get in Touch</h3>
+
+                <a href="tel:+918073325532" class="footer-contact-link">
+                    <span>Phone</span>
+                    <strong>+91 8073325532</strong>
+                </a>
+
+                <a href="mailto:rsconstructions4199@gmail.com" class="footer-contact-link">
+                    <span>Email</span>
+                    <strong>rsconstructions4199@gmail.com</strong>
+                </a>
+
+                <div class="footer-contact-link footer-location">
+                    <span>Location</span>
+                    <strong>Bengaluru, Karnataka</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+                All rights reserved &copy;
+                <span id="yr">2026</span> RS Enterprises.
+            </p>
+
+            <a href="#top" class="back-to-top" aria-label="Back to top">
+                Back to top ↑
             </a>
-
-            <p>
-                Interior design and construction solutions
-                for residential and commercial spaces.
-            </p>
-
-        </div>
-
-
-        <!-- QUICK LINKS -->
-
-        <div class="footer-navigation">
-
-            <h2 class="footer-heading">Quick Links</h2>
-
-            <ul class="footer-list">
-
-                <li><a class="footer-link" href="../index.html">Home</a></li>
-
-                <li><a class="footer-link" href="about.html">About Us</a></li>
-
-                <li><a class="footer-link" href="services.html">Services</a></li>
-
-                <li><a class="footer-link" href="projects.html">Projects</a></li>
-
-                <li><a class="footer-link" href="construction.html">Construction</a></li>
-
-                <li><a class="footer-link" href="testimonials.html">Testimonials</a></li>
-
-                <li><a class="footer-link" href="contact.html">Contact</a></li>
-
-            </ul>
-
-        </div>
-
-
-        <!-- FOOTER SERVICES -->
-
-        <div class="footer-services">
-
-            <h2 class="footer-heading">Our Services</h2>
-
-            <ul class="footer-list">
-
-                <li><a class="footer-link" href="services/modular-interiors.html">Modular Interiors</a></li>
-
-                <li><a class="footer-link" href="services/furniture.html">Furniture</a></li>
-
-                <li><a class="footer-link" href="services/ceiling-lighting.html">Ceiling &amp; Lighting</a></li>
-
-                <li><a class="footer-link" href="services/doors-windows-partitions.html">Doors, Windows &amp; Partitions</a></li>
-
-                <li><a class="footer-link" href="services/fabrication-metal-works.html">Fabrication &amp; Metal Works</a></li>
-
-                <li><a class="footer-link" href="services/wall-interiors-decoration.html">Wall Interiors &amp; Decoration</a></li>
-
-                <li><a class="footer-link" href="services/materials-carpentry.html">Materials &amp; Carpentry</a></li>
-
-                <li><a class="footer-link" href="services/other-interior-spaces.html">Other Interior Spaces</a></li>
-
-                <li><a class="footer-link" href="services/flooring.html">Flooring</a></li>
-
-            </ul>
-
-        </div>
-
-
-        <!-- FOOTER CONTACT -->
-
-        <div class="footer-contact">
-
-            <h2 class="footer-heading">Get In Touch</h2>
-
-            <p>
-                Location: Bengaluru, Karnataka, India
-            </p>
-
-            <p>
-                Service Coverage: Across India
-            </p>
-
-            <a class="footer-link" href="contact.html">
-                Contact Ace of Space
-            </a>
-
-            <!-- Add verified phone, email and WhatsApp details later. -->
-
-        </div>
-
-
-        <!-- COPYRIGHT -->
-
-        <div class="footer-bottom">
-
-            <p>
-                &copy; 2026 Ace of Space. All Rights Reserved.
-            </p>
 
         </div>
 
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-    <script src="../js/script.js" defer></script>
+
+    <!-- SCRIPTS -->
+    <script>
+
+        // Current year
+        const yearElement = document.getElementById("yr");
+
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+
+
+        // Accessible mobile navigation
+        const navToggle = document.querySelector(".nav-toggle");
+        const siteNav = document.querySelector(".site-nav");
+
+        function closeNavigation() {
+
+            if (!navToggle || !siteNav) return;
+
+            navToggle.setAttribute("aria-expanded", "false");
+            navToggle.setAttribute("aria-label", "Open navigation");
+
+            siteNav.classList.remove("is-open");
+            document.body.classList.remove("nav-scroll-locked");
+
+        }
+
+
+        if (navToggle && siteNav) {
+
+            navToggle.addEventListener("click", () => {
+
+                const isOpen =
+                    navToggle.getAttribute("aria-expanded") === "true";
+
+                navToggle.setAttribute(
+                    "aria-expanded",
+                    String(!isOpen)
+                );
+
+                navToggle.setAttribute(
+                    "aria-label",
+                    isOpen ? "Open navigation" : "Close navigation"
+                );
+
+                siteNav.classList.toggle("is-open", !isOpen);
+
+                document.body.classList.toggle(
+                    "nav-scroll-locked",
+                    !isOpen
+                );
+
+            });
+
+
+            siteNav.querySelectorAll("a").forEach((link) => {
+
+                link.addEventListener("click", closeNavigation);
+
+            });
+
+
+            document.addEventListener("keydown", (event) => {
+
+                if (event.key === "Escape") {
+                    closeNavigation();
+                }
+
+            });
+
+
+            window.addEventListener("resize", () => {
+
+                if (window.innerWidth > 1050) {
+                    closeNavigation();
+                }
+
+            });
+
+        }
+
+    </script>
 
 </body>
 </html>

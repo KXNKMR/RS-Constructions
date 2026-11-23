@@ -1,241 +1,577 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover customer experiences with Ace of Space interior design and construction services.">
-    <title>Testimonials | Ace of Space</title>
+
+    <meta
+        name="description"
+        content="Discover client experiences and feedback about RS Enterprises construction and building services in Bengaluru and across India."
+    >
+
+    <title>Testimonials | RS Enterprises</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body class="site-body">
 
+    <!-- HEADER -->
+
     <header class="site-header">
-        <div class="logo site-logo">
-            <a href="../index.html">
-                <span>ACE OF SPACE</span>
-                <span>INTERIOR DESIGN &amp; CONSTRUCTION</span>
+
+        <div class="site-logo">
+            <a href="../index.html" aria-label="RS Enterprises Home">
+                <img
+                    src="../assets/images/rs-enterprises-monogram.png"
+                    alt="RS Enterprises logo"
+                >
             </a>
         </div>
 
-        <nav aria-label="Main Navigation" class="site-nav">
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="site-nav" id="main-navigation" aria-label="Main navigation">
+
             <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="services.html">Services</a>
-                    <ul class="nav-submenu">
-                        <li><a class="nav-link" href="services/modular-interiors.html">Modular Interiors</a></li>
-                        <li><a class="nav-link" href="services/furniture.html">Furniture</a></li>
-                        <li><a class="nav-link" href="services/ceiling-lighting.html">Ceiling &amp; Lighting</a></li>
-                        <li><a class="nav-link" href="services/doors-windows-partitions.html">Doors, Windows &amp; Partitions</a></li>
-                        <li><a class="nav-link" href="services/fabrication-metal-works.html">Fabrication &amp; Metal Works</a></li>
-                        <li><a class="nav-link" href="services/wall-interiors-decoration.html">Wall Interiors &amp; Decoration</a></li>
-                        <li><a class="nav-link" href="services/materials-carpentry.html">Materials &amp; Carpentry</a></li>
-                        <li><a class="nav-link" href="services/other-interior-spaces.html">Other Interior Spaces</a></li>
-                        <li><a class="nav-link" href="services/flooring.html">Flooring</a></li>
-                    </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="construction.html">Construction</a></li>
-                <li class="nav-item"><a class="nav-link" href="testimonials.html" aria-current="page">Testimonials</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="testimonials.html" aria-current="page">
+                        Testimonials
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
             </ul>
+
         </nav>
 
         <div class="header-cta">
-            <a class="button button--primary" href="contact.html">Get a Quote</a>
+            <a class="button button--primary" href="contact.html">
+                Get a Quote
+            </a>
         </div>
+
     </header>
+
 
     <main class="site-main">
 
-        <!-- Testimonials Hero -->
-        <section class="section section--hero testimonials-hero"
-            aria-labelledby="testimonials-hero-title">
+
+        <!-- TESTIMONIALS HERO -->
+
+        <section
+            class="section section--hero testimonials-hero"
+            aria-labelledby="testimonials-hero-title"
+        >
+
+            <!-- IMPORTANT: Content and image are direct children.
+                 This preserves the hero split layout. -->
 
             <div class="testimonials-hero-content">
-                <p class="section-eyebrow">Client Experiences</p>
-                <h1 class="section-title" id="testimonials-hero-title">
-                    Every Space Has a Story. So Does Every Client.
-                </h1>
-                <p class="section-description">
-                    The experience of creating a space matters just as much
-                    as the space itself. This is where our clients' stories
-                    and experiences will be shared.
+
+                <p class="section-eyebrow">
+                    Client Experiences
                 </p>
+
+                <h1 class="section-title" id="testimonials-hero-title">
+                    Every Build Has a Story. So Does Every Client.
+                </h1>
+
+                <p class="section-description">
+                    A successful construction experience is about more
+                    than the finished building. It is about understanding
+                    expectations, maintaining communication and working
+                    together to bring an idea to life.
+                </p>
+
                 <div class="hero-actions">
+
                     <a class="button button--primary" href="contact.html">
                         Start Your Project
                     </a>
-                    <a class="button button--secondary" href="projects.html">
-                        Explore Projects
+
+                    <a class="button button--secondary" href="services.html">
+                        Explore Our Services
                     </a>
+
                 </div>
+
             </div>
+
 
             <div class="testimonials-hero-image">
+
                 <img
-                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2400&q=88"
-                    alt="Finished interior design space"
-                 loading="lazy">
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2400&q=88"
+                    alt="Modern commercial building showcasing architectural construction"
+                    fetchpriority="high"
+                >
+
             </div>
+
         </section>
 
-        <!-- Testimonials Introduction -->
-        <section class="section section--introduction testimonials-introduction"
-            aria-labelledby="testimonials-introduction-title">
 
-            <div class="section-intro">
-                <p class="section-eyebrow">Your Experience Matters</p>
-                <h2 class="section-title" id="testimonials-introduction-title">
-                    More Than Just the Finished Space.
-                </h2>
-                <p class="section-description">
-                    Every project begins with an idea and a conversation.
-                    Understanding expectations, working towards a shared
-                    vision and bringing the space together are all part
-                    of the experience.
-                </p>
-            </div>
-        </section>
+        <!-- TESTIMONIALS INTRODUCTION -->
 
-        <!-- Client Testimonials -->
-        <section class="section section--reviews testimonials-reviews"
-            aria-labelledby="testimonials-reviews-title">
+        <section
+            class="section section--introduction testimonials-introduction"
+            aria-labelledby="testimonials-introduction-title"
+        >
 
-            <div class="section-intro">
-                <p class="section-eyebrow">What Our Clients Say</p>
-                <h2 class="section-title" id="testimonials-reviews-title">
-                    Experiences Worth Sharing.
-                </h2>
-                <p class="section-description">
-                    Genuine feedback from people who have experienced
-                    working with Ace of Space.
-                </p>
-            </div>
+            <div class="container">
 
-            <div class="testimonial-pending" role="note">
-                <span class="testimonial-pending-mark" aria-hidden="true">“</span>
-                <div>
-                    <p>Client stories are being prepared.</p>
-                    <span>Verified testimonials will be published here with client permission. No sample reviews are presented as real feedback.</span>
-                </div>
-            </div>
-        </section>
+                <div class="section-intro">
 
-        <!-- Project Connection -->
-        <section class="section section--project-link testimonials-project-link"
-            aria-labelledby="testimonials-project-title">
-
-            <div class="testimonials-project-grid">
-                <div class="testimonials-project-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=2000&q=88"
-                        alt="Interior design project by Ace of Space"
-                     loading="lazy">
-                </div>
-
-                <div class="testimonials-project-content">
-                    <p class="section-eyebrow">Our Work</p>
-                    <h2 class="section-title" id="testimonials-project-title">
-                        See the Spaces Behind the Stories.
-                    </h2>
-                    <p class="section-description">
-                        Explore our project collection to discover different
-                        spaces, design directions and creative possibilities.
+                    <p class="section-eyebrow">
+                        Built on Trust
                     </p>
-                    <a class="button button--primary" href="projects.html">
-                        Explore Our Projects
-                    </a>
+
+                    <h2 class="section-title" id="testimonials-introduction-title">
+                        More Than Just the Finished Building.
+                    </h2>
+
+                    <p class="section-description">
+                        Every construction project begins with an idea,
+                        a requirement and a conversation. Understanding
+                        what matters to our clients is an important part
+                        of the process.
+                    </p>
+
+                    <p class="section-description">
+                        From initial planning to project execution,
+                        we believe in clear communication, coordinated
+                        work and a commitment to delivering construction
+                        solutions that meet the intended requirements.
+                    </p>
+
                 </div>
+
             </div>
+
         </section>
 
-        <!-- Final CTA -->
-        <section class="section section--cta testimonials-cta"
-            aria-labelledby="testimonials-cta-title">
 
-            <div class="testimonials-cta-content">
-                <p class="section-eyebrow">Your Story Starts Here</p>
-                <h2 class="section-title" id="testimonials-cta-title">
-                    Let's Create Something Meaningful Together.
-                </h2>
-                <p class="section-description">
-                    Have a space in mind? Tell us what you're looking to
-                    create and let's start a conversation.
-                </p>
-                <div class="hero-actions">
-                    <a class="button button--primary" href="contact.html">
-                        Get in Touch
-                    </a>
-                    <a class="button button--secondary" href="services.html">
-                        Explore Services
-                    </a>
+        <!-- CLIENT TESTIMONIALS -->
+
+        <section
+            class="section section--reviews testimonials-reviews"
+            aria-labelledby="testimonials-reviews-title"
+        >
+
+            <div class="container">
+
+                <div class="section-intro">
+
+                    <p class="section-eyebrow">
+                        What Our Clients Say
+                    </p>
+
+                    <h2 class="section-title" id="testimonials-reviews-title">
+                        Experiences Worth Sharing.
+                    </h2>
+
+                    <p class="section-description">
+                        We value the people behind every project.
+                        Here are some of the experiences shared by
+                        clients who have worked with RS Enterprises.
+                    </p>
+
                 </div>
+
+
+                <div class="review-grid">
+
+
+                    <!-- REVIEW 01 -->
+
+                    <article class="review-card">
+
+                        <blockquote>
+                            <p>
+                                RS Enterprises delivered our construction
+                                project with excellent workmanship and
+                                timely completion. Their team maintained
+                                quality at every stage of the work.
+                            </p>
+                        </blockquote>
+
+                        <div class="review-client">
+                            <cite>Sona Valliappa</cite>
+                        </div>
+
+                    </article>
+
+
+                    <!-- REVIEW 02 -->
+
+                    <article class="review-card">
+
+                        <blockquote>
+                            <p>
+                                Professional team with strong technical
+                                knowledge. The project execution was smooth
+                                and met all our expectations.
+                            </p>
+                        </blockquote>
+
+                        <div class="review-client">
+                            <cite>Sona Heights</cite>
+                        </div>
+
+                    </article>
+
+
+                    <!-- REVIEW 03 -->
+
+                    <article class="review-card">
+
+                        <blockquote>
+                            <p>
+                                Reliable construction partner. Their
+                                attention to detail and quality standards
+                                made the entire project process easy
+                                for us.
+                            </p>
+                        </blockquote>
+
+                        <div class="review-client">
+                            <cite>Arihant</cite>
+                        </div>
+
+                    </article>
+
+
+                    <!-- REVIEW 04 -->
+
+                    <article class="review-card">
+
+                        <blockquote>
+                            <p>
+                                Great experience working with RS Enterprises.
+                                They maintained clear communication and
+                                completed the project as promised.
+                            </p>
+                        </blockquote>
+
+                        <div class="review-client">
+                            <cite>Vee Tech</cite>
+                        </div>
+
+                    </article>
+
+
+                    <!-- REVIEW 05 -->
+
+                    <article class="review-card">
+
+                        <blockquote>
+                            <p>
+                                Highly dependable construction services.
+                                We appreciate their commitment to quality
+                                and client satisfaction.
+                            </p>
+                        </blockquote>
+
+                        <div class="review-client">
+                            <cite>Chaitanya</cite>
+                        </div>
+
+                    </article>
+
+
+                </div>
+
             </div>
+
         </section>
+
+
+        <!-- OUR COMMITMENT -->
+
+        <section
+            class="section section--commitment testimonials-commitment"
+            aria-labelledby="testimonials-commitment-title"
+        >
+
+            <div class="container">
+
+                <div class="section-intro">
+
+                    <p class="section-eyebrow">
+                        Our Commitment
+                    </p>
+
+                    <h2 class="section-title" id="testimonials-commitment-title">
+                        The Experience Matters at Every Stage.
+                    </h2>
+
+                    <p class="section-description">
+                        We approach construction with attention to the
+                        requirements, coordination and practical details
+                        that shape the overall project experience.
+                    </p>
+
+                </div>
+
+
+                <div class="commitment-grid">
+
+
+                    <article class="commitment-card">
+
+                        <span class="commitment-number">01</span>
+
+                        <h3>Understanding Requirements</h3>
+
+                        <p>
+                            Every project starts by understanding the
+                            client's expectations, objectives and
+                            construction requirements.
+                        </p>
+
+                    </article>
+
+
+                    <article class="commitment-card">
+
+                        <span class="commitment-number">02</span>
+
+                        <h3>Clear Coordination</h3>
+
+                        <p>
+                            Planning and coordination help keep project
+                            activities aligned with the intended scope
+                            and execution requirements.
+                        </p>
+
+                    </article>
+
+
+                    <article class="commitment-card">
+
+                        <span class="commitment-number">03</span>
+
+                        <h3>Focused Execution</h3>
+
+                        <p>
+                            Attention to construction activities,
+                            workmanship and project requirements
+                            remains central throughout execution.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+
+        <section
+            class="section section--cta testimonials-cta"
+            aria-labelledby="testimonials-cta-title"
+        >
+
+            <div class="container">
+
+                <div class="testimonials-cta-content">
+
+                    <p class="section-eyebrow">
+                        Your Project Starts Here
+                    </p>
+
+                    <h2 class="section-title" id="testimonials-cta-title">
+                        Let's Build Something Meaningful Together.
+                    </h2>
+
+                    <p class="section-description">
+                        Have a construction requirement in mind?
+                        Tell us about your plans and let's begin
+                        a conversation about your project.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a class="button button--primary" href="contact.html">
+                            Get in Touch
+                        </a>
+
+                        <a class="button button--secondary" href="services.html">
+                            Explore Services
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
 
     </main>
 
+
+    <!-- FOOTER -->
+
     <footer class="site-footer">
-        <div class="footer-brand">
-            <a class="footer-link footer-logo" href="../index.html">
-                <span>ACE OF SPACE</span>
-                <span>INTERIOR DESIGN &amp; CONSTRUCTION</span>
-            </a>
-            <p>
-                Interior design and construction solutions
-                for residential and commercial spaces.
-            </p>
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <a class="footer-logo" href="../index.html">
+                    <img
+                        src="../assets/images/rs-enterprises-monogram.png"
+                        alt="RS Enterprises logo"
+                    >
+                </a>
+
+                <p>
+                    Construction solutions built around quality,
+                    reliability and lasting value for residential
+                    and commercial spaces.
+                </p>
+
+            </div>
+
+
+            <div class="footer-navigation">
+
+                <h2 class="footer-heading">Quick Links</h2>
+
+                <ul class="footer-list">
+
+                    <li><a class="footer-link" href="../index.html">Home</a></li>
+                    <li><a class="footer-link" href="about.html">About Us</a></li>
+                    <li><a class="footer-link" href="services.html">Services</a></li>
+                    <li><a class="footer-link" href="testimonials.html">Testimonials</a></li>
+                    <li><a class="footer-link" href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-services">
+
+                <h2 class="footer-heading">Our Services</h2>
+
+                <ul class="footer-list">
+
+                    <li><a class="footer-link" href="services.html">Residential Construction</a></li>
+                    <li><a class="footer-link" href="services.html">Commercial Construction</a></li>
+                    <li><a class="footer-link" href="services.html">Industrial & Infrastructure</a></li>
+                    <li><a class="footer-link" href="services.html">Civil & Structural Works</a></li>
+                    <li><a class="footer-link" href="services.html">Turnkey Construction</a></li>
+                    <li><a class="footer-link" href="services.html">Renovation & Remodelling</a></li>
+                    <li><a class="footer-link" href="services.html">Architectural & Design Services</a></li>
+                    <li><a class="footer-link" href="services.html">Interior Design & Execution</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h2 class="footer-heading">Get in Touch</h2>
+
+                <p>
+                    Location: Bengaluru, Karnataka, India
+                </p>
+
+                <p>
+                    Service Coverage: Across India
+                </p>
+
+                <p>
+                    <a class="footer-link" href="tel:+918073325532">
+                        +91 8073325532
+                    </a>
+                </p>
+
+                <p>
+                    <a class="footer-link" href="mailto:rsconstructions4199@gmail.com">
+                        rsconstructions4199@gmail.com
+                    </a>
+                </p>
+
+                <a class="footer-link" href="contact.html">
+                    Contact RS Enterprises
+                </a>
+
+            </div>
+
+
         </div>
 
-        <div class="footer-navigation">
-            <h2 class="footer-heading">Quick Links</h2>
-            <ul class="footer-list">
-                <li><a class="footer-link" href="../index.html">Home</a></li>
-                <li><a class="footer-link" href="about.html">About Us</a></li>
-                <li><a class="footer-link" href="services.html">Services</a></li>
-                <li><a class="footer-link" href="projects.html">Projects</a></li>
-                <li><a class="footer-link" href="construction.html">Construction</a></li>
-                <li><a class="footer-link" href="testimonials.html">Testimonials</a></li>
-                <li><a class="footer-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-services">
-            <h2 class="footer-heading">Our Services</h2>
-            <ul class="footer-list">
-                <li><a class="footer-link" href="services/modular-interiors.html">Modular Interiors</a></li>
-                <li><a class="footer-link" href="services/furniture.html">Furniture</a></li>
-                <li><a class="footer-link" href="services/ceiling-lighting.html">Ceiling &amp; Lighting</a></li>
-                <li><a class="footer-link" href="services/doors-windows-partitions.html">Doors, Windows &amp; Partitions</a></li>
-                <li><a class="footer-link" href="services/fabrication-metal-works.html">Fabrication &amp; Metal Works</a></li>
-                <li><a class="footer-link" href="services/wall-interiors-decoration.html">Wall Interiors &amp; Decoration</a></li>
-                <li><a class="footer-link" href="services/materials-carpentry.html">Materials &amp; Carpentry</a></li>
-                <li><a class="footer-link" href="services/other-interior-spaces.html">Other Interior Spaces</a></li>
-                <li><a class="footer-link" href="services/flooring.html">Flooring</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-contact">
-            <h2 class="footer-heading">Get In Touch</h2>
-            <p>Location: Bengaluru, Karnataka, India</p>
-            <p>Service Coverage: Across India</p>
-            <a class="footer-link" href="contact.html">Contact Ace of Space</a>
-            <!-- Add verified phone, email and WhatsApp details later. -->
-        </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Ace of Space. All Rights Reserved.</p>
+
+            <p>
+                &copy; 2026 RS Enterprises. All Rights Reserved.
+            </p>
+
         </div>
+
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+    <!-- SCRIPTS -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        defer
+    ></script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        defer
+    ></script>
+
     <script src="../js/script.js" defer></script>
 
 </body>

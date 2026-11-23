@@ -8,34 +8,56 @@
 
     <meta
         name="description"
-        content="Discover Ace of Space, an interior design and construction company based in Bengaluru, creating residential and commercial spaces across India."
+        content="Get to know RS Enterprises, a Bengaluru-based construction company offering building construction, flooring, waterproofing, infrastructure and renovation services."
     >
 
-    <title>About Us | Ace of Space</title>
+    <meta name="theme-color" content="#171715">
+
+    <title>About Us | RS Enterprises</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body class="site-body">
+<body class="site-body" id="top">
 
-    <!-- =====================================
-         HEADER & NAVIGATION
-    ====================================== -->
+    <!-- HEADER & NAVIGATION -->
 
     <header class="site-header">
 
         <div class="logo site-logo">
-            <a href="../index.html">
-                <span>ACE OF SPACE</span>
-                <span>INTERIOR DESIGN &amp; CONSTRUCTION</span>
+            <a href="../index.html" aria-label="RS Enterprises Home">
+                <img
+                    src="../assets/images/rs-enterprises-monogram.png"
+                    alt="RS Enterprises"
+                >
             </a>
         </div>
 
-        <nav aria-label="Main Navigation" class="site-nav">
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
+        <nav
+            aria-label="Main Navigation"
+            class="site-nav"
+            id="main-navigation"
+        >
             <ul class="nav-list">
 
                 <li class="nav-item">
@@ -49,77 +71,7 @@
                 </li>
 
                 <li class="nav-item">
-
-                    <a class="nav-link" href="services.html">
-                        Services
-                    </a>
-
-                    <ul class="nav-submenu">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/modular-interiors.html">
-                                Modular Interiors
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/furniture.html">
-                                Furniture
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/ceiling-lighting.html">
-                                Ceiling &amp; Lighting
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/doors-windows-partitions.html">
-                                Doors, Windows &amp; Partitions
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/fabrication-metal-works.html">
-                                Fabrication &amp; Metal Works
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/wall-interiors-decoration.html">
-                                Wall Interiors &amp; Decoration
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/materials-carpentry.html">
-                                Materials &amp; Carpentry
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/other-interior-spaces.html">
-                                Other Interior Spaces
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services/flooring.html">
-                                Flooring
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="construction.html">Construction</a>
+                    <a class="nav-link" href="services.html">Services</a>
                 </li>
 
                 <li class="nav-item">
@@ -131,130 +83,141 @@
                 </li>
 
             </ul>
-
         </nav>
 
         <div class="header-cta">
             <a class="button button--primary" href="contact.html">
-                Get a Quote
+                Get in Touch
             </a>
         </div>
 
     </header>
 
 
-    <main class="site-main">
+    <main class="site-main about-page">
 
 
-        <!-- =====================================
-             01. ABOUT PAGE HERO
-        ====================================== -->
+        <!-- 01. ABOUT PAGE HERO -->
 
         <section
             aria-labelledby="about-hero-heading"
             class="section section--about-hero about-hero"
         >
 
-            <p class="section-eyebrow">
-                GET TO KNOW US
-            </p>
+            <div class="about-hero-content">
 
-            <h1 class="section-title" id="about-hero-heading">
-                Designing Spaces.
-                Building Possibilities.
-            </h1>
+                <p class="section-eyebrow">
+                    ABOUT RS ENTERPRISES
+                </p>
 
-            <p class="section-description">
-                At Ace of Space, we bring interior design
-                and construction together to create spaces
-                that balance functionality, aesthetics
-                and thoughtful planning.
-            </p>
+                <h1 class="section-title" id="about-hero-heading">
+                    Building Foundations.
+                    <br>
+                    Creating Possibilities.
+                </h1>
 
-            <div class="hero-actions">
+                <p class="section-description">
+                    Construction is more than putting materials together.
+                    It is about understanding a vision, planning every
+                    detail and bringing spaces to life through thoughtful
+                    execution.
+                </p>
 
-                <a class="button button--primary" href="services.html">
-                    Explore Our Services
-                </a>
+                <div class="hero-actions">
 
-                <a class="button button--secondary" href="projects.html">
-                    View Our Projects
-                </a>
+                    <a class="button button--primary" href="services.html">
+                        Explore Our Services
+                    </a>
+
+                    <a class="button button--secondary" href="contact.html">
+                        Discuss Your Project
+                    </a>
+
+                </div>
 
             </div>
 
             <div class="about-hero-image">
 
-                <!-- Replace with an actual company or project image -->
-
                 <img
-                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2400&q=88"
-                    alt="Interior design and construction work by Ace of Space"
-                 loading="lazy">
+                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2400&q=88"
+                    alt="Construction site showing building development and structural work"
+                    fetchpriority="high"
+                >
 
             </div>
 
         </section>
 
 
-        <!-- =====================================
-             02. WHO WE ARE
-        ====================================== -->
+        <!-- 02. WHO WE ARE -->
 
         <section
             aria-labelledby="about-introduction-heading"
             class="section section--about-introduction about-introduction"
         >
 
-            <div class="section-intro">
+            <div class="container">
 
-                <p class="section-eyebrow">
-                    WHO WE ARE
-                </p>
+                <div class="section-intro">
 
-                <h2 class="section-title" id="about-introduction-heading">
-                    More Than Just Spaces.
-                    We Shape How They Work.
-                </h2>
-
-            </div>
-
-            <div class="about-introduction-grid">
-
-                <div class="about-introduction-content">
-
-                    <p>
-                        Ace of Space is an interior design
-                        and construction company based in
-                        Bengaluru, Karnataka, India.
+                    <p class="section-eyebrow">
+                        WHO WE ARE
                     </p>
 
-                    <p>
-                        We work across residential and
-                        commercial spaces, bringing together
-                        interior solutions, custom elements,
-                        materials, furniture and construction
-                        requirements under one broader scope.
-                    </p>
-
-                    <p>
-                        From individual interior elements
-                        to complete spaces, our focus is on
-                        understanding what each project needs
-                        and developing solutions around its
-                        intended purpose.
-                    </p>
+                    <h2 class="section-title" id="about-introduction-heading">
+                        Turning Construction Requirements
+                        Into Real-World Spaces.
+                    </h2>
 
                 </div>
 
-                <div class="about-introduction-image">
+                <div class="about-introduction-grid">
 
-                    <!-- Replace with an actual project or company image -->
+                    <div class="about-introduction-content">
 
-                    <img
-                        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=2000&q=88"
-                        alt="Interior space representing the work of Ace of Space"
-                     loading="lazy">
+                        <p>
+                            RS Enterprises is a construction company based
+                            in Bengaluru, Karnataka, India.
+                        </p>
+
+                        <p>
+                            Our work spans a range of construction and
+                            specialised service requirements, including
+                            building construction, civil and structural
+                            works, concrete and epoxy flooring, waterproofing,
+                            road works, infrastructure, interior execution
+                            and renovation.
+                        </p>
+
+                        <p>
+                            We recognise that every project comes with
+                            its own purpose, requirements and practical
+                            considerations. Understanding these needs
+                            is an important part of developing the right
+                            approach to each project.
+                        </p>
+
+                        <p>
+                            From initial planning considerations to the
+                            different stages of construction, our focus
+                            is on bringing the requirements of a project
+                            together through practical solutions and
+                            considered execution.
+                        </p>
+
+                    </div>
+
+                    <div class="about-introduction-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2000&q=88"
+                            alt="Modern architectural building"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
+                    </div>
 
                 </div>
 
@@ -263,485 +226,197 @@
         </section>
 
 
-        <!-- =====================================
-             03. WHAT WE DO
-        ====================================== -->
+        <!-- 03. WHAT WE DO -->
 
         <section
             aria-labelledby="about-capabilities-heading"
             class="section section--about-capabilities about-capabilities"
         >
 
-            <div class="section-intro">
+            <div class="container">
 
-                <p class="section-eyebrow">
-                    WHAT WE DO
-                </p>
+                <div class="section-intro">
 
-                <h2 class="section-title" id="about-capabilities-heading">
-                    Interior Design &amp; Construction.
-                    Connected Under One Roof.
-                </h2>
-
-                <p class="section-description">
-                    We offer solutions across interior design
-                    and construction, helping bring different
-                    aspects of a space together.
-                </p>
-
-            </div>
-
-
-            <div class="about-capabilities-grid card-grid">
-
-
-                <!-- INTERIOR DESIGN -->
-
-                <article class="about-capability-card">
-
-                    <div class="about-capability-image">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2000&q=88"
-                            alt="Interior design and furnishing"
-                         loading="lazy">
-
-                    </div>
-
-                    <div class="about-capability-content">
-
-                        <p class="section-eyebrow">
-                            INTERIOR DESIGN
-                        </p>
-
-                        <h3>
-                            Thoughtful Interior Solutions
-                        </h3>
-
-                        <p>
-                            From modular interiors and furniture
-                            to lighting, flooring, wall treatments
-                            and custom interior elements, we work
-                            across different aspects of interior spaces.
-                        </p>
-
-                        <a
-                            class="text-link"
-                            href="services.html"
-                        >
-                            Explore Interior Services
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- CONSTRUCTION -->
-
-                <article class="about-capability-card">
-
-                    <div class="about-capability-image">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=88"
-                            alt="Building construction and execution"
-                         loading="lazy">
-
-                    </div>
-
-                    <div class="about-capability-content">
-
-                        <p class="section-eyebrow">
-                            CONSTRUCTION
-                        </p>
-
-                        <h3>
-                            Building with Purpose
-                        </h3>
-
-                        <p>
-                            Construction is another important
-                            part of what we do. We bring attention
-                            to planning, practical requirements
-                            and the execution involved in
-                            developing a space.
-                        </p>
-
-                        <a
-                            class="text-link"
-                            href="construction.html"
-                        >
-                            Explore Construction
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             04. OUR PHILOSOPHY
-        ====================================== -->
-
-        <section
-            aria-labelledby="about-philosophy-heading"
-            class="section section--about-philosophy about-philosophy"
-        >
-
-            <div class="about-philosophy-content">
-
-                <p class="section-eyebrow">
-                    OUR PHILOSOPHY
-                </p>
-
-                <h2 class="section-title" id="about-philosophy-heading">
-                    Good Design Is Not Just
-                    About How a Space Looks.
-                </h2>
-
-                <p class="section-description">
-                    A well-considered space should work as
-                    naturally as it looks. Its layout,
-                    materials, lighting, furniture and
-                    construction all contribute to the
-                    experience of using it.
-                </p>
-
-                <p>
-                    We believe that every design decision
-                    should have a purpose. The goal is to
-                    bring visual character and practical
-                    functionality together, while keeping
-                    the needs of the space at the centre
-                    of the process.
-                </p>
-
-            </div>
-
-            <div class="about-philosophy-image">
-
-                <!-- Replace with an actual project image -->
-
-                <img
-                    src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2000&q=88"
-                    alt="Thoughtfully designed interior space"
-                 loading="lazy">
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             05. OUR APPROACH
-        ====================================== -->
-
-        <section
-            aria-labelledby="about-approach-heading"
-            class="section section--about-approach about-approach"
-        >
-
-            <div class="section-intro">
-
-                <p class="section-eyebrow">
-                    HOW WE APPROACH A PROJECT
-                </p>
-
-                <h2 class="section-title" id="about-approach-heading">
-                    From Understanding to Execution.
-                </h2>
-
-                <p class="section-description">
-                    Every project has its own requirements.
-                    A clear approach helps bring the ideas,
-                    decisions and execution together.
-                </p>
-
-            </div>
-
-
-            <div class="about-approach-grid card-grid">
-
-
-                <!-- STEP 01 -->
-
-                <article class="about-approach-card">
-
-                    <span class="about-approach-number">
-                        01
-                    </span>
-
-                    <h3>
-                        Understanding Your Needs
-                    </h3>
-
-                    <p>
-                        We begin by understanding the space,
-                        its purpose, your preferences
-                        and the requirements of the project.
+                    <p class="section-eyebrow">
+                        WHAT WE DO
                     </p>
 
-                </article>
+                    <h2 class="section-title" id="about-capabilities-heading">
+                        Construction Solutions
+                        Across Different Sectors.
+                    </h2>
 
-
-                <!-- STEP 02 -->
-
-                <article class="about-approach-card">
-
-                    <span class="about-approach-number">
-                        02
-                    </span>
-
-                    <h3>
-                        Planning &amp; Design
-                    </h3>
-
-                    <p>
-                        The requirements are translated into
-                        a considered direction for the layout,
-                        design, materials and functionality.
+                    <p class="section-description">
+                        Our portfolio brings together nine service areas
+                        covering building construction, specialised
+                        flooring, waterproofing, infrastructure,
+                        interiors and renovation.
                     </p>
 
-                </article>
+                </div>
 
 
-                <!-- STEP 03 -->
+                <div class="about-capabilities-grid card-grid">
 
-                <article class="about-approach-card">
 
-                    <span class="about-approach-number">
-                        03
-                    </span>
+                    <article class="about-capability-card">
 
-                    <h3>
-                        Execution
-                    </h3>
+                        <div class="about-capability-image">
 
-                    <p>
-                        The planned work moves into execution,
-                        bringing together the relevant interior
-                        and construction requirements.
-                    </p>
+                            <img
+                                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85"
+                                alt="Contemporary residential house"
+                                loading="lazy"
+                                decoding="async"
+                            >
 
-                </article>
+                        </div>
 
+                        <div class="about-capability-content">
 
-                <!-- STEP 04 -->
+                            <p class="section-eyebrow">
+                                BUILDING CONSTRUCTION
+                            </p>
 
-                <article class="about-approach-card">
+                            <h3>
+                                Spaces Designed for Living and Working
+                            </h3>
 
-                    <span class="about-approach-number">
-                        04
-                    </span>
+                            <p>
+                                Building construction covers the
+                                development of residential and
+                                commercial spaces, bringing together
+                                structural requirements and practical
+                                building needs.
+                            </p>
 
-                    <h3>
-                        Bringing It Together
-                    </h3>
+                            <a class="text-link" href="services.html">
+                                Explore Our Services
+                            </a>
 
-                    <p>
-                        The different elements come together
-                        to create a finished space that
-                        responds to the project's purpose.
-                    </p>
+                        </div>
 
-                </article>
+                    </article>
 
 
-            </div>
+                    <article class="about-capability-card">
 
-        </section>
+                        <div class="about-capability-image">
 
+                            <img
+                                src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1600&q=85"
+                                alt="Modern architectural flooring and interior space"
+                                loading="lazy"
+                                decoding="async"
+                            >
 
-        <!-- =====================================
-             06. WHAT MATTERS TO US
-        ====================================== -->
+                        </div>
 
-        <section
-            aria-labelledby="about-values-heading"
-            class="section section--about-values about-values"
-        >
+                        <div class="about-capability-content">
 
-            <div class="section-intro">
+                            <p class="section-eyebrow">
+                                FLOORING SOLUTIONS
+                            </p>
 
-                <p class="section-eyebrow">
-                    WHAT MATTERS TO US
-                </p>
+                            <h3>
+                                Surfaces Built for Performance
+                            </h3>
 
-                <h2 class="section-title" id="about-values-heading">
-                    Principles Behind Every Space.
-                </h2>
+                            <p>
+                                Concrete flooring and epoxy flooring
+                                solutions address different functional
+                                and finishing requirements across
+                                residential, commercial and industrial
+                                environments.
+                            </p>
 
-                <p class="section-description">
-                    The way a space is planned and developed
-                    matters just as much as the final result.
-                </p>
+                            <a class="text-link" href="services.html">
+                                Explore Our Services
+                            </a>
 
-            </div>
+                        </div>
 
+                    </article>
 
-            <div class="about-values-grid card-grid">
 
+                    <article class="about-capability-card">
 
-                <article class="about-value-card">
+                        <div class="about-capability-image">
 
-                    <span class="about-value-number">01</span>
+                            <img
+                                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=85"
+                                alt="Construction professionals carrying out building work"
+                                loading="lazy"
+                                decoding="async"
+                            >
 
-                    <h3>Functionality</h3>
+                        </div>
 
-                    <p>
-                        Creating spaces that serve their
-                        intended purpose and support
-                        everyday activities.
-                    </p>
+                        <div class="about-capability-content">
 
-                </article>
+                            <p class="section-eyebrow">
+                                WATERPROOFING & FINISHING
+                            </p>
 
+                            <h3>
+                                Protecting and Completing Structures
+                            </h3>
 
-                <article class="about-value-card">
+                            <p>
+                                Waterproofing and building finishing
+                                works address important requirements
+                                involved in protecting, completing
+                                and maintaining built spaces.
+                            </p>
 
-                    <span class="about-value-number">02</span>
+                            <a class="text-link" href="services.html">
+                                Explore Our Services
+                            </a>
 
-                    <h3>Thoughtful Design</h3>
+                        </div>
 
-                    <p>
-                        Considering layouts, proportions,
-                        materials and details as part
-                        of a complete design.
-                    </p>
+                    </article>
 
-                </article>
 
+                    <article class="about-capability-card">
 
-                <article class="about-value-card">
+                        <div class="about-capability-image">
 
-                    <span class="about-value-number">03</span>
+                            <img
+                                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=85"
+                                alt="Architectural planning and construction development"
+                                loading="lazy"
+                                decoding="async"
+                            >
 
-                    <h3>Attention to Detail</h3>
+                        </div>
 
-                    <p>
-                        Giving importance to the individual
-                        elements that contribute to the
-                        overall character of a space.
-                    </p>
+                        <div class="about-capability-content">
 
-                </article>
+                            <p class="section-eyebrow">
+                                CIVIL & INFRASTRUCTURE
+                            </p>
 
+                            <h3>
+                                The Work Behind Every Development
+                            </h3>
 
-                <article class="about-value-card">
+                            <p>
+                                Civil and structural works, road
+                                development, infrastructure,
+                                interior execution and renovation
+                                bring together different aspects
+                                of project development.
+                            </p>
 
-                    <span class="about-value-number">04</span>
+                            <a class="text-link" href="services.html">
+                                Explore Our Services
+                            </a>
 
-                    <h3>Practical Execution</h3>
+                        </div>
 
-                    <p>
-                        Keeping design ideas connected
-                        to materials, requirements
-                        and real-world execution.
-                    </p>
+                    </article>
 
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             07. WHERE WE WORK
-        ====================================== -->
-
-        <section
-            aria-labelledby="about-location-heading"
-            class="section section--about-location about-location"
-        >
-
-            <div class="about-location-content">
-
-                <p class="section-eyebrow">
-                    OUR REACH
-                </p>
-
-                <h2 class="section-title" id="about-location-heading">
-                    Based in Bengaluru.
-                    Working Across India.
-                </h2>
-
-                <p class="section-description">
-                    Ace of Space is based in Bengaluru,
-                    Karnataka, India, with a service
-                    focus that extends across India.
-                </p>
-
-                <a
-                    class="text-link"
-                    href="contact.html"
-                >
-                    Get in Touch
-                </a>
-
-            </div>
-
-            <div class="about-location-image">
-
-                <!-- Replace with a suitable location or project image -->
-
-                <img
-                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=88"
-                    alt="Interior project representing the reach of Ace of Space"
-                 loading="lazy">
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             08. EXPLORE OUR WORK
-        ====================================== -->
-
-        <section
-            aria-labelledby="about-projects-heading"
-            class="section section--about-projects about-projects"
-        >
-
-            <div class="section-intro">
-
-                <p class="section-eyebrow">
-                    OUR WORK
-                </p>
-
-                <h2 class="section-title" id="about-projects-heading">
-                    Explore What We Do.
-                </h2>
-
-                <p class="section-description">
-                    Take a closer look at our interior design
-                    and construction services, and explore
-                    the projects in our portfolio.
-                </p>
-
-                <div class="hero-actions">
-
-                    <a
-                        class="button button--primary"
-                        href="projects.html"
-                    >
-                        Explore Our Projects
-                    </a>
-
-                    <a
-                        class="button button--secondary"
-                        href="services.html"
-                    >
-                        View All Services
-                    </a>
 
                 </div>
 
@@ -750,38 +425,394 @@
         </section>
 
 
-        <!-- =====================================
-             09. FINAL ENQUIRY CTA
-        ====================================== -->
+        <!-- 04. OUR PHILOSOPHY -->
+
+        <section
+            aria-labelledby="about-philosophy-heading"
+            class="section section--about-philosophy about-philosophy"
+        >
+
+            <div class="container">
+
+                <!-- Added grid wrapper for side-by-side content -->
+
+                <div class="about-philosophy-grid">
+
+                    <div class="about-philosophy-content">
+
+                        <p class="section-eyebrow">
+                            OUR PHILOSOPHY
+                        </p>
+
+                        <h2 class="section-title" id="about-philosophy-heading">
+                            Every Structure Begins
+                            With a Thoughtful Plan.
+                        </h2>
+
+                        <p class="section-description">
+                            A successful construction project involves
+                            more than the final structure. It brings
+                            together planning, materials, coordination,
+                            practical requirements and execution.
+                        </p>
+
+                        <p>
+                            We believe that understanding the purpose
+                            of a space is an important starting point.
+                            The decisions made throughout a project
+                            should respond to its requirements and
+                            contribute to the overall development
+                            of the structure.
+                        </p>
+
+                    </div>
+
+                    <div class="about-philosophy-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=2000&q=88"
+                            alt="Large-scale construction and infrastructure development"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 05. OUR APPROACH -->
+
+        <section
+            aria-labelledby="about-approach-heading"
+            class="section section--about-approach about-approach"
+        >
+
+            <div class="container">
+
+                <div class="section-intro">
+
+                    <p class="section-eyebrow">
+                        HOW WE APPROACH A PROJECT
+                    </p>
+
+                    <h2 class="section-title" id="about-approach-heading">
+                        From Initial Requirements
+                        to Project Completion.
+                    </h2>
+
+                    <p class="section-description">
+                        Every construction project has its own
+                        requirements. A structured approach helps
+                        connect the different stages of development.
+                    </p>
+
+                </div>
+
+
+                <div class="about-approach-grid card-grid">
+
+
+                    <article class="about-approach-card">
+
+                        <span class="about-approach-number">01</span>
+
+                        <h3>Understanding the Project</h3>
+
+                        <p>
+                            Understanding the intended purpose,
+                            project requirements, site conditions
+                            and the expectations involved.
+                        </p>
+
+                    </article>
+
+
+                    <article class="about-approach-card">
+
+                        <span class="about-approach-number">02</span>
+
+                        <h3>Planning & Preparation</h3>
+
+                        <p>
+                            Considering the relevant design,
+                            estimation, materials, resources
+                            and practical requirements.
+                        </p>
+
+                    </article>
+
+
+                    <article class="about-approach-card">
+
+                        <span class="about-approach-number">03</span>
+
+                        <h3>Construction & Execution</h3>
+
+                        <p>
+                            Bringing together the required
+                            construction activities and
+                            coordinating the work involved.
+                        </p>
+
+                    </article>
+
+
+                    <article class="about-approach-card">
+
+                        <span class="about-approach-number">04</span>
+
+                        <h3>Completion & Handover</h3>
+
+                        <p>
+                            Bringing the planned work together
+                            towards the intended project outcome
+                            and completion requirements.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 06. WHAT MATTERS TO US -->
+
+        <section
+            aria-labelledby="about-values-heading"
+            class="section section--about-values about-values"
+        >
+
+            <div class="container">
+
+                <div class="section-intro">
+
+                    <p class="section-eyebrow">
+                        WHAT MATTERS TO US
+                    </p>
+
+                    <h2 class="section-title" id="about-values-heading">
+                        The Principles Behind
+                        Every Construction Project.
+                    </h2>
+
+                    <p class="section-description">
+                        The way a project is planned, coordinated
+                        and executed plays an important role
+                        in its development.
+                    </p>
+
+                </div>
+
+
+                <div class="about-values-grid card-grid">
+
+
+                    <article class="about-value-card">
+
+                        <span class="about-value-number">01</span>
+
+                        <h3>Practical Planning</h3>
+
+                        <p>
+                            Understanding project requirements
+                            and considering practical needs
+                            before execution.
+                        </p>
+
+                    </article>
+
+
+                    <article class="about-value-card">
+
+                        <span class="about-value-number">02</span>
+
+                        <h3>Attention to Detail</h3>
+
+                        <p>
+                            Recognising the importance of
+                            individual elements throughout
+                            the construction process.
+                        </p>
+
+                    </article>
+
+
+                    <article class="about-value-card">
+
+                        <span class="about-value-number">03</span>
+
+                        <h3>Coordination</h3>
+
+                        <p>
+                            Bringing together the different
+                            activities, materials and
+                            requirements involved in a project.
+                        </p>
+
+                    </article>
+
+
+                    <article class="about-value-card">
+
+                        <span class="about-value-number">04</span>
+
+                        <h3>Purposeful Execution</h3>
+
+                        <p>
+                            Keeping the intended use and
+                            practical requirements of a
+                            structure at the centre of the work.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 07. WHERE WE ARE BASED -->
+
+        <section
+            aria-labelledby="about-location-heading"
+            class="section section--about-location about-location"
+        >
+
+            <div class="container">
+
+                <div class="about-location-content">
+
+                    <p class="section-eyebrow">
+                        OUR LOCATION
+                    </p>
+
+                    <h2 class="section-title" id="about-location-heading">
+                        Rooted in Bengaluru.
+                        Focused on Building.
+                    </h2>
+
+                    <p class="section-description">
+                        RS Enterprises is based in Bengaluru,
+                        Karnataka, India.
+                    </p>
+
+                    <p>
+                        Get in touch with us to discuss your
+                        construction requirements and project
+                        location.
+                    </p>
+
+                    <a class="text-link" href="contact.html">
+                        Contact RS Enterprises
+                    </a>
+
+                </div>
+
+                <div class="about-location-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=2000&q=88"
+                        alt="Modern architectural development"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 08. EXPLORE OUR SERVICES -->
+
+        <section
+            aria-labelledby="about-services-heading"
+            class="section section--about-projects about-projects"
+        >
+
+            <div class="container">
+
+                <div class="section-intro">
+
+                    <p class="section-eyebrow">
+                        OUR SERVICES
+                    </p>
+
+                    <h2 class="section-title" id="about-services-heading">
+                        One Company.
+                        Multiple Construction Capabilities.
+                    </h2>
+
+                    <p class="section-description">
+                        Explore the different construction services
+                        offered by RS Enterprises, from building
+                        construction and specialised flooring to
+                        waterproofing, infrastructure, interiors
+                        and renovation.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a class="button button--primary" href="services.html">
+                            Explore All Services
+                        </a>
+
+                        <a class="button button--secondary" href="contact.html">
+                            Discuss Your Requirements
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 09. FINAL ENQUIRY CTA -->
 
         <section
             aria-labelledby="about-enquiry-heading"
             class="section section--enquiry enquiry-cta"
         >
 
-            <p class="section-eyebrow">
-                LET'S START A CONVERSATION
-            </p>
+            <div class="container">
 
-            <h2 class="section-title" id="about-enquiry-heading">
-                Have a Space in Mind?
-            </h2>
+                <p class="section-eyebrow">
+                    LET'S BUILD SOMETHING
+                </p>
 
-            <p class="section-description">
-                Whether you're planning an interior,
-                developing a commercial space or
-                considering a construction project,
-                let's discuss what you have in mind.
-            </p>
+                <h2 class="section-title" id="about-enquiry-heading">
+                    Have a Construction Project in Mind?
+                </h2>
 
-            <div class="hero-actions">
+                <p class="section-description">
+                    Tell us about your requirements.
+                    Let's start a conversation about
+                    your next construction project.
+                </p>
 
-                <a
-                    class="button button--primary"
-                    href="contact.html"
-                >
-                    Discuss Your Project
-                </a>
+                <div class="hero-actions">
+
+                    <a class="button button--primary" href="contact.html">
+                        Discuss Your Project
+                    </a>
+
+                </div>
 
             </div>
 
@@ -791,128 +822,128 @@
     </main>
 
 
-    <!-- =====================================
-         FOOTER
-    ====================================== -->
+    <!-- FOOTER -->
 
     <footer class="site-footer">
 
+        <div class="container footer-main">
 
-        <!-- FOOTER BRAND -->
 
-        <div class="footer-brand">
+            <div class="footer-brand">
 
-            <a class="footer-link footer-logo" href="../index.html">
+                <a
+                    class="footer-link footer-logo"
+                    href="../index.html"
+                    aria-label="RS Enterprises Home"
+                >
 
-                <span>ACE OF SPACE</span>
+                    <img
+                        src="../assets/images/rs-enterprises-monogram.png"
+                        alt="RS Enterprises"
+                        loading="lazy"
+                    >
 
-                <span>INTERIOR DESIGN &amp; CONSTRUCTION</span>
+                </a>
 
-            </a>
+                <p>
+                    Specialised construction, flooring,
+                    waterproofing and infrastructure solutions
+                    for a range of project requirements.
+                </p>
 
-            <p>
-                Interior design and construction solutions
-                for residential and commercial spaces.
-            </p>
+            </div>
+
+
+            <div class="footer-navigation">
+
+                <h2 class="footer-heading">Quick Links</h2>
+
+                <ul class="footer-list">
+
+                    <li><a class="footer-link" href="../index.html">Home</a></li>
+                    <li><a class="footer-link" href="about.html">About Us</a></li>
+                    <li><a class="footer-link" href="services.html">Services</a></li>
+                    <li><a class="footer-link" href="testimonials.html">Testimonials</a></li>
+                    <li><a class="footer-link" href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-services">
+
+                <h2 class="footer-heading">Our Services</h2>
+
+                <ul class="footer-list">
+
+                    <li><a class="footer-link" href="services.html">Waterproofing</a></li>
+                    <li><a class="footer-link" href="services.html">Concrete Flooring</a></li>
+                    <li><a class="footer-link" href="services.html">Epoxy Flooring</a></li>
+                    <li><a class="footer-link" href="services.html">Road Works & Infrastructure</a></li>
+                    <li><a class="footer-link" href="services.html">Interior Design & Execution</a></li>
+                    <li><a class="footer-link" href="services.html">Civil & Structural Works</a></li>
+                    <li><a class="footer-link" href="services.html">Building Construction</a></li>
+                    <li><a class="footer-link" href="services.html">Renovation & Remodelling</a></li>
+                    <li><a class="footer-link" href="services.html">Building Finishing Works</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h2 class="footer-heading">Get In Touch</h2>
+
+                <p>Bengaluru, Karnataka, India</p>
+
+                <p>
+                    <a class="footer-link" href="tel:+918073325532">
+                        +91 8073325532
+                    </a>
+                </p>
+
+                <p>
+                    <a class="footer-link" href="mailto:rsconstructions4199@gmail.com">
+                        rsconstructions4199@gmail.com
+                    </a>
+                </p>
+
+                <a class="footer-link" href="contact.html">
+                    Contact RS Enterprises
+                </a>
+
+            </div>
+
 
         </div>
 
 
-        <!-- QUICK LINKS -->
-
-        <div class="footer-navigation">
-
-            <h2 class="footer-heading">Quick Links</h2>
-
-            <ul class="footer-list">
-
-                <li><a class="footer-link" href="../index.html">Home</a></li>
-
-                <li><a class="footer-link" href="about.html">About Us</a></li>
-
-                <li><a class="footer-link" href="services.html">Services</a></li>
-
-                <li><a class="footer-link" href="projects.html">Projects</a></li>
-
-                <li><a class="footer-link" href="construction.html">Construction</a></li>
-
-                <li><a class="footer-link" href="testimonials.html">Testimonials</a></li>
-
-                <li><a class="footer-link" href="contact.html">Contact</a></li>
-
-            </ul>
-
-        </div>
-
-
-        <!-- FOOTER SERVICES -->
-
-        <div class="footer-services">
-
-            <h2 class="footer-heading">Our Services</h2>
-
-            <ul class="footer-list">
-
-                <li><a class="footer-link" href="services/modular-interiors.html">Modular Interiors</a></li>
-
-                <li><a class="footer-link" href="services/furniture.html">Furniture</a></li>
-
-                <li><a class="footer-link" href="services/ceiling-lighting.html">Ceiling &amp; Lighting</a></li>
-
-                <li><a class="footer-link" href="services/doors-windows-partitions.html">Doors, Windows &amp; Partitions</a></li>
-
-                <li><a class="footer-link" href="services/fabrication-metal-works.html">Fabrication &amp; Metal Works</a></li>
-
-                <li><a class="footer-link" href="services/wall-interiors-decoration.html">Wall Interiors &amp; Decoration</a></li>
-
-                <li><a class="footer-link" href="services/materials-carpentry.html">Materials &amp; Carpentry</a></li>
-
-                <li><a class="footer-link" href="services/other-interior-spaces.html">Other Interior Spaces</a></li>
-
-                <li><a class="footer-link" href="services/flooring.html">Flooring</a></li>
-
-            </ul>
-
-        </div>
-
-
-        <!-- FOOTER CONTACT -->
-
-        <div class="footer-contact">
-
-            <h2 class="footer-heading">Get In Touch</h2>
+        <div class="container footer-bottom">
 
             <p>
-                Location: Bengaluru, Karnataka, India
-            </p>
-
-            <p>
-                Service Coverage: Across India
-            </p>
-
-            <a class="footer-link" href="contact.html">
-                Contact Ace of Space
-            </a>
-
-            <!-- Add verified phone, email and WhatsApp details later. -->
-
-        </div>
-
-
-        <!-- COPYRIGHT -->
-
-        <div class="footer-bottom">
-
-            <p>
-                &copy; 2026 Ace of Space. All Rights Reserved.
+                &copy; <span id="current-year">2026</span>
+                RS Enterprises. All Rights Reserved.
             </p>
 
         </div>
 
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+    <!-- SCRIPTS -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        defer
+    ></script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        defer
+    ></script>
+
     <script src="../js/script.js" defer></script>
 
 </body>
